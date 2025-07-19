@@ -1,9 +1,45 @@
-<html>
-    <head>
-       <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-	<script src="index.js"></script>
-    </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nilly's Burger Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Smythe&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-title-container">
+        <h1>Nilly's Burger Shop</h1>
+        <h2>The best burgers in town</h2>
+      </div>
+    </header>
+    <main>
+      <section class="menu-wrapper" id="menu-id"></section>
+      <section class="cart-wrapper hidden" id="cart-wrapper">
+        <div class="cart-container">
+          <h3 class="order-title">Your order</h3>
+          <div id="cart-items"></div>
+          <div class="total-price-container" id="total-price"></div>
+          <button class="order-btn" id="order-btn">Complete order</button>
+        </div>
+      </section>
+      <section class="card-form-wrapper" id="card-modal-container"></section>
+      <section
+        class="thanks-text-container"
+        id="thanks-text-container"
+      ></section>
+    </main>
+    <script src="index.js" type="module"></script>
+  </body>
 </html>
-
